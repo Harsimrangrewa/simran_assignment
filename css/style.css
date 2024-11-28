@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1500px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1.25em;
+    border-radius: 0.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* background-color: black; */
+    color: white;
+    text-shadow: #4CAF50;
+    padding: 0.625rem 0;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 767px) {
+    header {
+        font-size: 24px;
+    }}
+
+.navigation {
+    list-style-type: none;
+    padding: 1.25rem;
+    height: 30px;
+    text-align: center;
+    background-color: #3d3030;
+}
+
+.navigation li {
+    display: inline;
+    margin: 0 15px;
+}
+.navigation a:hover {
+    color: #4CAF50;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1.25rem;
+}
+@media  screen and (min-width: 601px) and (max-width: 1200px) {
+.image {
+    background-image: url('../logoimage/img.jpeg');
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-section {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+}}
+
+main {
+    display: flex ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+main > section {
+    flex: 1;
+    padding: 1.25rem;
+    background-color:whitesmoke;
+    margin-right: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    height: auto;
+    padding: 1.25rem;
+    background-color: white;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 0.625rem 0;
+    background-color: black;
+    color: white;
+}
+/* biography page*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../logoimage/26.58459-2500x1400-new-naruto-background-photo-desktop-hd.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+header, footer {
+    padding: 1.25rem;
+    color: white;
+}
+
+.bio_alignment{
+    display: flex;
+}
+.content{
+    display: flex ;
+    flex-direction: column;
+    text-align: center;
+}
+.data-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.set{
+    display: flex; 
+    align-items: flex-start; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .set {
+        flex-direction: column;
+        align-items: flex-start;
+    }}
+
+.quote {
+    flex: 1;
+    text-align: right; 
+}
+.right-content {
+    flex: 1; 
+}
+.data-table th, .data-table td {
+    border: 1px solid #ccc; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+.imge{
+    border-radius: 8px;
+    width: 30%; 
+    margin-right: 20px; 
+}
+blockquote{
+    font-size: 2.5em;
+}
+.as{
+    width: 200px;
+    height: auto;
+    padding: 1.25rem;
+    background-image: url(../gallery.image/Uzumaki.Naruto.full.1651951.jpg);
+}
+/*contact*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6.25rem;
+    padding-top: 1.875rem;
+    padding-right: 6.25rem;
+    padding-bottom: 6.25rem;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.btn-primary {
+    padding: 0.5rem 1rem; 
+}
+
+/*Gallery*/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.grid-item{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+
+aside{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {padding: 1.5rem;}
+}
+
+/*media*/
+.video {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ @media (max-width: 600px) {
+    .video{
+        flex: 1 1 100%; /* Stack videos on small screens */
+    }
+}
+
+
